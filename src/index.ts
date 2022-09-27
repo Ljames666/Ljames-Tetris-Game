@@ -66,10 +66,10 @@ document.addEventListener('DOMContentLoaded', () => {
   // atribuir funções aos códigos de teclas
 
   function control(e: KeyboardEventInit) {
-    if (e.keyCode === 39) moveRight();
-    if (e.keyCode === 38) rotate();
-    if (e.keyCode === 37) moveLeft();
-    if (e.keyCode === 40) moveDown();
+    if (e.key === 'ArrowRight' || e.key === 'd') moveRight();
+    if (e.key === 'ArrowUp' || e.key === 'w') rotate();
+    if (e.key === 'ArrowLeft' || e.key === 'a') moveLeft();
+    if (e.key === 'ArrowDown' || e.key === 's') moveDown();
   }
 
   document.addEventListener('keydown', control);

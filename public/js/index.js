@@ -52,13 +52,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     // atribuir funções aos códigos de teclas
     function control(e) {
-        if (e.keyCode === 39)
+        if (e.key === 'ArrowRight' || e.key === 'd')
             moveRight();
-        if (e.keyCode === 38)
+        if (e.key === 'ArrowUp' || e.key === 'w')
             rotate();
-        if (e.keyCode === 37)
+        if (e.key === 'ArrowLeft' || e.key === 'a')
             moveLeft();
-        if (e.keyCode === 40)
+        if (e.key === 'ArrowDown' || e.key === 's')
             moveDown();
     }
     document.addEventListener('keydown', control);
